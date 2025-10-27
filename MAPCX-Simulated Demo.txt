@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX Lead Portfolio: Aditya Warman</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Hide all slides by default */
+        .slide {
+            display: none;
+            min-height: 650px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Show the active slide */
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Modal styles */
+        #modal {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        #modal.active {
+            display: flex;
+        }
+
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Custom scrollbar for content areas */
+        .slide-content {
+            overflow-y: auto;
+            max-height: 550px; /* Adjust this height as needed */
+        }
+        .slide-content::-webkit-scrollbar {
+            width: 6px;
+        }
+        .slide-content::-webkit-scrollbar-thumb {
+            background-color: #38bdf8; /* cyan-400 */
+            border-radius: 3px;
+        }
+        .slide-content::-webkit-scrollbar-track {
+            background-color: #334155; /* slate-700 */
+        }
+        
+        /* Loading Spinner */
+        .loader {
+            width: 20px;
+            height: 20px;
+            border: 3px solid #38bdf8; /* cyan-400 */
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-gray-200 p-4 md:p-8 flex items-center justify-center min-h-screen">
+
+    <!-- Main Presentation Container -->
+    <div class="max-w-6xl w-full bg-slate-800 rounded-2xl shadow-2xl overflow-hidden border border-slate-700">
+        <!-- Presentation Header -->
+        <header class="p-4 md:p-6 bg-slate-900/50 border-b border-slate-700 flex justify-between items-center">
+            <h1 class="text-lg md:text-xl font-bold text-white">CX Lead Strategic Vision: MAP Active</h1>
+            <img src="https://placehold.co/100x40/png?text=MAP+Active" alt="Logo Placeholder" class="h-8 md:h-10 opacity-70" onerror="this.style.display='none'">
+        </header>
+
+        <!-- Slide Viewport -->
+        <main class="p-6 md:p-10 relative">
+
+            <!-- Slide 1: Introduction -->
+            <div class="slide active" data-slide="1">
+                <div class="flex-grow flex flex-col justify-center items-center text-center">
+                    <img src="https://placehold.co/120x120/67e8f9/1e293b?text=AW" alt="Aditya Warman Headshot" class="rounded-full mb-6 border-4 border-slate-600 shadow-lg" onerror="this.src='https://placehold.co/120x120/png?text=AW'">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Elevating Customer Experience</h2>
+                    <p class="text-2xl md:text-3xl font-light text-cyan-400 mb-8">From Reactive Service to a Proactive Value Engine</p>
+                    <div class="bg-slate-700/50 p-6 rounded-lg max-w-2xl">
+                        <p class="text-lg text-gray-300">
+                            My name is Aditya Warman, and this is my strategic diagnosis of the MAP Active ecosystem and the proven framework I would use to solve its challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Diagnosis -->
+            <div class="slide" data-slide="2">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">My Diagnosis: 'Symptoms' vs. 'Root Causes'</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">To be a strategist, we must solve the underlying *root causes*, not just treat the *symptoms*. Click on any root cause to learn more.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <!-- Column 1: Symptoms -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600">
+                        <h3 class="text-2xl font-semibold text-white mb-4 flex items-center">
+                            <!-- SVG: Symptoms Icon (Clipboard) -->
+                            <svg class="w-6 h-6 mr-3 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" /></svg>
+                            The Symptoms (What was observed)
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-cyan-400 text-xl mr-3 font-bold">1.</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-100">120,000 Tickets / 30 Agents</h4>
+                                    <p class="text-gray-400 text-sm">Extremely high ticket-to-agent ratio.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-cyan-400 text-xl mr-3 font-bold">2.</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-100">Zendesk + WhatsApp</h4>
+                                    <p class="text-gray-400 text-sm">A high-volume, synchronous, conversational primary channel.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-cyan-400 text-xl mr-3 font-bold">3.</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-100">Multi-Platform (`brand.com`, Marketplaces)</h4>
+                                    <p class="text-gray-400 text-sm">Complex ecosystem with fragmented customer journeys.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-cyan-400 text-xl mr-3 font-bold">4.</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-100">Struggling with AI Adoption</h4>
+                                    <p class="text-gray-400 text-sm">Team is too "in the weeds" to innovate.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-cyan-400 text-xl mr-3 font-bold">5.</span>
+                                <div>
+                                    <h4 class="font-semibold text-gray-100">SEA Team Structure</h4>
+                                    <p class="text-gray-400 text-sm">Need for unified framework across diverse markets.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2: Root Causes (Interactive) -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600">
+                        <h3 class="text-2xl font-semibold text-white mb-4 flex items-center">
+                            <!-- SVG: Root Cause Icon (Brain) -->
+                            <svg class="w-6 h-6 mr-3 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" /></svg>
+                            My Diagnosis: The Root Causes
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="1. Extreme Agent Burnout & High Attrition"
+                                data-modal-text="With a 4,000 ticket/agent ratio, the workload is unsustainable. This leads to a constant, costly state of re-hiring and re-training, which drains team knowledge and morale, making innovation impossible. We must fix the math.">
+                                <h4 class="font-semibold text-gray-100">1. Extreme Agent Burnout & High Attrition</h4>
+                            </li>
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="2. 'WhatsApp as a Crutch'"
+                                data-modal-text="The team is 'drowning' in a real-time, synchronous channel. This creates a culture of constant firefighting, preventing agents from doing deep, focused work. The urgency of the channel dictates the workflow, not efficiency.">
+                                <h4 class="font-semibold text-gray-100">2. "WhatsApp as a Crutch"</h4>
+                            </li>
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="3. 'Swivel Chair' Chaos"
+                                data-modal-text="Agents are jumping between 3-5+ different tabs (Zendesk, Shopee, e-com admin, 3PL tracker) just to answer one simple question. This 'swivel chair' effect kills AHT, frustrates agents, and delays customer responses.">
+                                <h4 class="font-semibold text-gray-100">3. "Swivel Chair" Chaos</h4>
+                            </li>
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="4. No 'Single View of the Customer'"
+                                data-modal-text="Agents have to ask 'What is your order number?' and 'Which site did you order from?' This is high-effort for the customer and high-friction for the agent. We must proactively identify the customer and their context.">
+                                <h4 class="font-semibold text-gray-100">4. No "Single View of the Customer"</h4>
+                            </li>
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="5. Ineffective QA & Coaching"
+                                data-modal-text="At 120,000 tickets, manual QA is statistically useless. The team is 'flying blind' on quality. This leads to repeat contacts for the same unresolved issue, which inflates the ticket count and frustrates customers.">
+                                <h4 class="font-semibold text-gray-100">5. Ineffective QA & Coaching</h4>
+                            </li>
+                            <li class="p-3 rounded-md hover:bg-slate-600/50 transition cursor-pointer" 
+                                data-modal-title="6. Inconsistent Regional (SEA) Operations"
+                                data-modal-text="You aren't running one CX team; you're running 3-4 different ones (ID, PH, VN) with different 3PLs, payment methods, and processes, but without a unified framework. This is inefficient and unscalable.">
+                                <h4 class="font-semibold text-gray-100">6. Inconsistent Regional (SEA) Operations</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: 3-Pillar Framework -->
+            <div class="slide" data-slide="3">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">My 3-Pillar Strategic CX Framework</h2>
+                <p class="text-lg text-gray-300 text-center mb-10 max-w-3xl mx-auto">To solve these 6 root causes, I operate within a proven framework to build a scalable, efficient, and innovative CX organization.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <!-- Pillar 1 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col h-full">
+                        <!-- SVG: Pillar 1 (Optimize/Automate) - CHANGED -->
+                        <svg class="w-12 h-12 text-cyan-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-white mb-2">1. Optimize & Automate</h3>
+                        <p class="text-lg font-medium text-cyan-400 mb-4">The Efficiency Engine</p>
+                        <p class="text-gray-300 mb-4">By building a "Single Pane of Glass" for agents, automating L1 tickets, and re-engineering workflows to be efficient by design.</p>
+                        <div class="mt-auto">
+                            <span class="text-xs font-medium text-gray-400">SOLVES:</span>
+                            <p class="text-sm text-gray-200">Burnout, "WhatsApp Crutch", "Swivel Chair" Chaos</p>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col h-full">
+                        <!-- SVG: Pillar 2 (Analyze) - CHANGED -->
+                        <svg class="w-12 h-12 text-cyan-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-white mb-2">2. Analyze & Anticipate</h3>
+                        <p class="text-lg font-medium text-cyan-400 mb-4">The Proactive Engine</p>
+                        <p class="text-gray-300 mb-4">By transforming ticket data from "noise" into a "Voice of Customer" feed that *finds* and *fixes* upstream logistics and fulfillment problems.</p>
+                        <div class="mt-auto">
+                            <span class="text-xs font-medium text-gray-400">SOLVES:</span>
+                            <p class="text-sm text-gray-200">Ineffective QA, Inconsistent Ops, 120k Order Tickets</p>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col h-full">
+                        <!-- SVG: Pillar 3 (Empower/Team) - CHANGED -->
+                        <svg class="w-12 h-12 text-cyan-400 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m-4.682 2.72a.75.75 0 0 1-.058 1.063m.058-1.063a.75.75 0 0 0 1.063.058m-1.063-.058a.75.75 0 0 1 1.063.058m0 0a.75.75 0 0 1 1.063.058m-1.063-.058a.75.75 0 0 0 1.063.058m-1.063-.058A9.094 9.094 0 0 1 12 17.013m-3.741.479a3 3 0 0 0 4.682 2.72m-4.682-2.72a3 3 0 0 1-4.682-2.72m4.682 2.72 1.063.058m-1.063-.058-1.063.058m0 0v.083m0 0a.75.75 0 0 1-1.063.058m1.063-.058a.75.75 0 0 0-1.063.058m0 0a.75.75 0 0 1-1.063.058M12 12.75a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-9.75 3.375c0-1.036.84-1.875 1.875-1.875h15.75c1.035 0 1.875.84 1.875 1.875m-19.5 0a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3m-19.5 0a3 3 0 0 0 3 3h13.5a3 3 0 0 0 3-3Z" />
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-white mb-2">3. Empower & Elevate</h3>
+                        <p class="text-lg font-medium text-cyan-400 mb-4">The Human Engine</p>
+                        <p class="text-gray-300 mb-4">By creating a culture of mastery and ownership. We'll build specialized career paths, targeted coaching, and an internal "innovation forum."</p>
+                        <div class="mt-auto">
+                            <span class="text-xs font-medium text-gray-400">SOLVES:</span>
+                            <p class="text-sm text-gray-200">Agent Burnout, Attrition, Struggle with Innovation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Pillar 1 Proposal (A) - REVISED -->
+            <div class="slide" data-slide="4">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Pillar 1 Proposal (A): Solving 'Burnout' & 'WhatsApp Crutch'</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">This is my proposed solution, based on proven models, to fix your team's workload and break the "live chat panic."</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem Diagnosis</h4>
+                        <p class="text-gray-300">Your 120k ticket volume and reliance on WhatsApp creates extreme burnout. This "live chat panic" mode overwhelms the team, preventing any proactive work.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">My Proposed Strategy</h4>
+                        <p class="text-gray-300">My strategy is to implement an "automation-first" frontline to absorb L1 volume, filter inquiries, and set clear expectations for customers on synchronous channels.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Proposed Action Plan</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Deploy an AI chatbot in WhatsApp/Zendesk, fully integrated with your Order Management System (OMS).</li>
+                            <li>Enable 24/7 self-service: The bot will provide *personalized* order status and *initiate returns* without human intervention.</li>
+                            <li>Train the bot to triage complex issues and set accurate wait-time expectations before routing to a human agent.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center">
+                        <h4 class="text-xl font-semibold text-cyan-200 mb-3">Projected Strategic Result</h4>
+                        <p class="text-5xl font-extrabold text-white mb-2">Target 40% Deflection Rate</p>
+                        <p class="text-lg text-cyan-300">This *will fix the math*, taking 40% of repetitive work off the agents, allowing them to breathe and focus on complex cases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Pillar 1 Proposal (B) - REVISED -->
+            <div class="slide" data-slide="5">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Pillar 1 Proposal (B): Fixing 'Swivel Chair' & 'No Single View'</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">This is how I propose we build a "Single Pane of Glass" to make your agent workflow efficient.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem Diagnosis</h4>
+                        <p class="text-gray-300">Your agent AHT is high because they are manually searching 3-4 different systems (e-com admin, 3PL, Shopee) for order and customer data.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">My Proposed Strategy</h4>
+                        <p class="text-gray-300">My strategy is to build a "Single Pane of Glass" by integrating all critical data *into* the Zendesk sidebar, where your agents live and work.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Proposed Action Plan</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Partner *with your* IT and E-com teams to build API integrations that *pull* live order, payment, and logistics data directly into the Zendesk agent view.</li>
+                            <li>Use the customer's WhatsApp phone number as a primary key to *auto-load* their cross-platform order history *before* the agent says "hello."</li>
+                            <li>Create context-aware macros for different brands (`converse.id`, `hokoa.com`, etc.) and issue types.</li>
+                        </ul>
+                         <!-- NEW AI-POWERED DEMO SECTION -->
+                        <div class="mt-6 border-t border-cyan-700 pt-4">
+                            <h4 class="text-lg font-semibold text-cyan-400 mb-3">✨ Live Demo: AI-Powered Agent Assist</h4>
+                            <p class="text-sm text-gray-400 mb-2">Enter a sample customer query to see how AI can draft a perfect, empathetic reply for your agent in one click.</p>
+                            <textarea id="prompt-slide5" class="w-full bg-slate-800 border border-slate-600 rounded-md p-2 text-gray-200" rows="3">My Hoka shoes arrived but they're the wrong size and I already threw away the box! What do I do?</textarea>
+                            <button id="demoBtnSlide5" class="mt-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                                <span id="btn-text-slide5">✨ Generate Smart Reply</span>
+                                <span id="loader-slide5" class="loader" style="display: none;"></span>
+                            </button>
+                            <pre id="result-slide5" class="mt-4 p-4 bg-slate-900 rounded-md text-sm text-gray-300 whitespace-pre-wrap" style="display: none;"></pre>
+                        </div>
+                        <!-- END AI-POWERED DEMO SECTION -->
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center flex flex-col md:flex-row justify-around">
+                        <div>
+                            <h4 class="text-xl font-semibold text-cyan-200 mb-2">Projected Result 1</h4>
+                            <p class="text-5xl font-extrabold text-white mb-2">Target 30% Reduction</p>
+                            <p class="text-lg text-cyan-300">in Average Handle Time (AHT)</p>
+                        </div>
+                        <div class="border-t md:border-t-0 md:border-l border-cyan-700 my-4 md:my-0 md:mx-4"></div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-cyan-200 mb-2">Projected Result 2</h4>
+                            <p class="text-5xl font-extrabold text-white mb-2">Target 15-Point</p>
+                            <p class="text-lg text-cyan-300">Increase in First Contact Resolution (FCR)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Pillar 2 Proposal - REVISED -->
+            <div class="slide" data-slide="6">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Pillar 2 Proposal: From 'Ineffective QA' to 'Actionable Insight'</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">This is how I propose we use your data to find the "why" behind the volume and *eliminate* tickets upstream.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem Diagnosis</h4>
+                        <p class="text-gray-300">The business is "flying blind," only seeing "120k tickets" as a cost. You can't see the *root cause* of *why* customers are contacting you.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">My Proposed Strategy</h4>
+                        <p class="text-gray-300">My strategy is to implement a scalable QA & Voice of Customer (VoC) program to find the "why" and feed that data back to the business to fix the *actual problem*.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Proposed Action Plan</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Use Zendesk's AI to auto-score 100% of tickets for negative sentiment and keywords (e.g., "delay," "refund," "still waiting").</li>
+                            <li>Create a "Top 10 Failures" dashboard (e.g., 'Delay: 3PL Partner A') and establish a monthly CX Business Review with Operations and Logistics.</li>
+                            <li>Shift manager coaching from "random sampling" to targeted reviews of the *10 worst-rated interactions* of the week.</li>
+                            <li class="font-semibold text-gray-100">This QA framework will allow us to measure <em class="italic text-cyan-300">True Resolution</em>, not just "closed tickets."</li>
+                        </ul>
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center">
+                        <h4 class="text-xl font-semibold text-cyan-200 mb-3">Projected Strategic Result</h4>
+                        <p class="text-5xl font-extrabold text-white mb-2">Target 20% Reduction</p>
+                        <p class="text-lg text-cyan-300">in delivery-related tickets, as Operations can use this data to renegotiate 3PL SLAs. We won't just *handle* tickets; we will *prevent* them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Pillar 3 Proposal - REVISED -->
+            <div class="slide" data-slide="7">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Pillar 3 Proposal: From 'Burnout Culture' to 'Innovation Hub'</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">This is how I propose we solve attrition and the "struggle with AI" by empowering your team.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem Diagnosis</h4>
+                        <p class="text-gray-300">A 30-person team with high attrition and low engagement is common in this scenario. They feel like "ticket-takers," not professionals, and have no clear career path.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">My Proposed Strategy</h4>
+                        <p class="text-gray-300">My strategy is to restructure the team to build mastery, provide a clear growth path, and create a culture of agent-led innovation.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Proposed Action Plan</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Implement a 3-Tier structure: T1 (AI-assisted generalists), T2 (Complex specialists for escalations, marketplaces), T3 (VoC/QA/Coaches).</li>
+                            <li>Create a clear, skills-based career path from T1 to T3.</li>
+                            <li>Launch "Innovation Fridays": A monthly forum where agents present *their own* ideas for automation or process improvement.</li>
+                            <li class="font-semibold text-gray-100">This 3-Tier structure is the foundation for replacing inefficient FIFO with <strong class="font-semibold text-white">Intent-Based & Skills-Based Routing</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center">
+                        <h4 class="text-xl font-semibold text-cyan-200 mb-3">Projected Strategic Result</h4>
+                        <p class="text-5xl font-extrabold text-white mb-2">Target 25% Improvement</p>
+                        <p class="text-lg text-cyan-300">in Agent Retention. This will create a stable, expert team and solve the "struggle with AI adoption" by building it *with* them, not *for* them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Addressing Key Challenge 1 - REVISED DESIGN -->
+            <div class="slide" data-slide="8">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Addressing Key Challenge 1: "False Ticket Resolution"</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">A deep dive into Pillar 2, moving from "Closed" to "Truly Resolved."</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem</h4>
+                        <p class="text-gray-300">Standard reporting tracks 'Closed Tickets' as a success metric, creating a major blind spot. This hides repeat contacts, inflates ticket volume, and erodes customer trust.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Strategy</h4>
+                        <p class="text-gray-300">Implement a scalable QA framework (Pillar 2) to measure <strong class="font-semibold text-white">"True Resolution"</strong> by analyzing customer sentiment and intent, not just ticket status.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Action</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Implement <strong class="font-semibold text-white">AI-driven QA</strong> to auto-score 100% of tickets for *negative sentiment*, even if the ticket status is "closed."</li>
+                            <li>Use <strong class="font-semibold text-white">keyword analysis</strong> to automatically flag high-risk tickets (e.g., "still not working," "frustrated," "I guess I'll wait") for human review.</li>
+                            <li>Integrate this data into the "Top 10 Failures" dashboard for targeted agent coaching on *resolution*, not just speed.</li>
+                        </ul>
+                        <!-- NEW AI-POWERED DEMO SECTION -->
+                        <div class="mt-6 border-t border-cyan-700 pt-4">
+                            <h4 class="text-lg font-semibold text-cyan-400 mb-3">✨ Live Demo: AI-Powered QA Analysis</h4>
+                            <p class="text-sm text-gray-400 mb-2">Enter a sample "resolved" customer ticket to see how AI can instantly detect False Resolution and provide coaching tips.</p>
+                            <textarea id="prompt-slide8" class="w-full bg-slate-800 border border-slate-600 rounded-md p-2 text-gray-200" rows="3">Agent: "Is there anything else I can help you with?"
+Customer: "I guess not. The tracking still hasn't updated but if you say it's fine, I'll just wait. fine.
+Agent: "Great! Have a nice day."
+[Ticket Closed]</textarea>
+                            <button id="demoBtnSlide8" class="mt-2 bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                                <span id="btn-text-slide8">✨ Analyze Ticket for True Resolution</span>
+                                <span id="loader-slide8" class="loader" style="display: none;"></span>
+                            </button>
+                            <pre id="result-slide8" class="mt-4 p-4 bg-slate-900 rounded-md text-sm text-gray-300 whitespace-pre-wrap" style="display: none;"></pre>
+                        </div>
+                        <!-- END AI-POWERED DEMO SECTION -->
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center">
+                        <h4 class="text-xl font-semibold text-cyan-200 mb-3">Projected Strategic Result</h4>
+                        <p class="text-5xl font-extrabold text-white mb-2">20-30% Reduction</p>
+                        <p class="text-lg text-cyan-300">in repeat-contact tickets and a dramatic improvement in CSAT by providing a true measure of CX health.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Addressing Key Challenge 2 - REVISED DESIGN -->
+            <div class="slide" data-slide="9">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-2 text-center">Addressing Key Challenge 2: Inefficient Queue Routing</h2>
+                <p class="text-lg text-gray-300 text-center mb-8 max-w-3xl mx-auto">A deep dive into Pillars 1 & 3, replacing FIFO with a "Skills-Based" model.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Problem</h4>
+                        <p class="text-gray-300">A 'First-In, First-Out' (FIFO) model is highly inefficient. It treats simple WISMO queries and complex logistics failures with the same priority, increasing AHT and FCR.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white mb-3">Strategy</h4>
+                        <p class="text-gray-300">Deploy an advanced <strong class="font-semibold text-white">Intent-Based & Skills-Based Routing</strong> model, built on the foundation of my 3-Pillar framework to improve efficiency and agent satisfaction.</p>
+                    </div>
+                    <div class="bg-slate-700/50 p-6 rounded-lg md:col-span-2">
+                        <h4 class="text-xl font-semibold text-white mb-3">Action</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li><strong class="font-semibold text-white">Pillar 1 (AI Bot):</strong> The AI triages the customer's *intent* (e.g., 'WISMO,' 'Refund,' 'Marketplace Issue') *before* it ever hits the queue.</li>
+                            <li><strong class="font-semibold text-white">Pillar 3 (Team Tiers):</strong> The query is then routed *directly* to the agent with the right skills (T1 Generalist or T2 Specialist).</li>
+                            <li>This ensures complex issues are solved by experts on the first contact, bypassing unqualified agents and "swivel chair" escalations.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-cyan-900/40 border border-cyan-700 p-6 rounded-lg md:col-span-2 text-center">
+                        <h4 class="text-xl font-semibold text-cyan-200 mb-3">Projected Strategic Result</h4>
+                        <p class="text-5xl font-extrabold text-white mb-2">15-Point Increase</p>
+                        <p class="text-lg text-cyan-300">in First Contact Resolution (FCR) by connecting customers to the right expert the first time, every time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: 90-Day Plan -->
+            <div class="slide" data-slide="10">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">My Strategic 90-Day Plan for MAP Active</h2>
+                <p class="text-lg text-gray-300 text-center mb-10 max-w-3xl mx-auto">This is how I would apply my framework from Day 1 to fix the 6 root causes and deliver measurable results.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                    
+                    <!-- Phase 1 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col">
+                        <span class="text-sm font-bold text-cyan-400">PHASE 1</span>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Days 1-30: Diagnose & Plan</h3>
+                        <p class="text-gray-300 mb-4">Validate all 6 "hidden challenges." Shadow agents, audit the Zendesk/WhatsApp stack, and analyze the 120k tickets to find the Top 3 "Automation Quick Wins."</p>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col">
+                        <span class="text-sm font-bold text-cyan-400">PHASE 2</span>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Days 31-60: Launch & Integrate</h3>
+                        <p class="text-gray-300 mb-4">Deploy the first "Quick Win" AI automation to *immediately* reduce agent load. Begin the "Single Pane of Glass" integration. Launch the unified QA scorecard.</p>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600 flex flex-col">
+                        <span class="text-sm font-bold text-cyan-400">PHASE 3</span>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Days 61-90: Optimize & Empower</h3>
+                        <p class="text-gray-300 mb-4">Refine the chatbot and workflows based on data. Create the "Centralized Platform, Localized Process" playbook for SEA. Implement the T1/T2/T3 team structure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Strategist vs. Manager -->
+            <div class="slide" data-slide="11">
+                <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">Why Me? The Strategist vs. The Manager</h2>
+                <p class="text-lg text-gray-300 text-center mb-10 max-w-3xl mx-auto">You are looking for a strategist who can drive innovation. This is the core difference in my approach.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                    <!-- Column 1: The Manager -->
+                    <div class="bg-slate-700/50 p-6 rounded-lg border border-slate-600">
+                        <h3 class="text-2xl font-semibold text-white mb-4 flex items-center">
+                            <!-- SVG: X Circle -->
+                            <svg class="w-8 h-8 mr-3 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            The Manager (Execution)
+                        </h3>
+                        <ul class="space-y-4 text-gray-300 text-lg">
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Focuses on *handling* 120k tickets faster.</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Asks the team to "work harder."</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Reports on *CX metrics* (AHT, CSAT).</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Sees the 6 challenges as 6 *separate problems*.</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Waits for innovation directives.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2: The Strategist -->
+                    <div class="bg-cyan-900/40 p-6 rounded-lg border border-cyan-700">
+                        <h3 class="text-2xl font-semibold text-white mb-4 flex items-center">
+                            <!-- SVG: Check Circle -->
+                            <svg class="w-8 h-8 mr-3 text-cyan-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                            The Strategist (My Approach)
+                        </h3>
+                        <ul class="space-y-4 text-gray-200 text-lg">
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>Focuses on *eliminating* the 120k tickets at their root cause.</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>*Fixes the system* (AI, "Single View") so the team can work smarter.</li>
+                            <li classli class="flex items-start"><span class="mr-3 mt-1.5">-</span>Reports on *business metrics* (Cost-to-Serve, Retention, Root Cause %).</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.ScreenSize.IsScreenSizeLg.ScreenSize.IsScreenSizeLg"><span class="mr-3 mt-1.5">-</span>Sees the 6 challenges as one *interconnected system* to be re-engineered.</li>
+                            <li class="flex items-start"><span class="mr-3 mt-1.5">-</span>*Drives* the AI and automation agenda from Day 1.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 12: Thank You -->
+            <div class="slide" data-slide="12">
+                <div class="flex-grow flex flex-col justify-center items-center text-center">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Thank You</h2>
+                    <p class="text-xl md:text-2xl font-light text-cyan-400 mb-8 max-w-3xl">
+                        My framework is proven to solve the exact challenges of high-volume, multi-platform e-commerce. I am confident I can deploy it here to build a world-class, efficient, and innovative CX organization for MAP Active.
+                    </p>
+                    <p class="text-3xl text-white font-bold mb-10">
+                        I'm ready for your questions.
+                    </p>
+                    <div class="text-lg text-gray-300">
+                        <p class="font-semibold">Aditya Warman</p>
+                        <p>aditya.warman@gmail.com | linkedin.com/in/adityawarman</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Presentation Footer / Navigation -->
+        <footer class="p-4 bg-slate-900/50 border-t border-slate-700 flex justify-between items-center">
+            <button id="prev-btn" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-5 rounded-lg transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                Prev
+            </button>
+            <div id="slide-counter" class="text-sm font-medium text-gray-400">
+                Slide 1 / 12
+            </div>
+            <button id="next-btn" class="bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-5 rounded-lg transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+                Next
+            </button>
+        </footer>
+    </div>
+    
+    <!-- Modal for Root Causes -->
+    <div id="modal" class="fixed inset-0 bg-black/70 p-4 flex items-center justify-center z-50">
+        <div class="bg-slate-800 max-w-lg w-full rounded-lg shadow-2xl border border-slate-600 overflow-hidden">
+            <div class="flex justify-between items-center p-5 bg-slate-700 border-b border-slate-600">
+                <h3 id="modal-title" class="text-xl font-bold text-cyan-400">Modal Title</h3>
+                <button id="close-modal" class="text-gray-400 hover:text-white transition">
+                    <!-- SVG: Close Icon -->
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <div class="p-6">
+                <p id="modal-text" class="text-lg text-gray-300"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // --- START: SIMULATED API FUNCTIONS ---
+        // We use simulated functions to ensure the demo works 100% of the time
+        // during a presentation, without needing a live API key or internet connection.
+
+        /**
+         * Simulates a 1.5 second API call for the Agent Assist demo
+         * @param {string} userPrompt - The text from the textarea
+         * @returns {Promise<string>} A hard-coded, professional reply
+         */
+        function mockAgentAssistApi(userPrompt) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    const response = `Hi! Thanks for reaching out. I'm sorry to hear the Hoka shoes weren't the right fit.
+
+No problem at all about the box! We can still accept the return.
+
+I've just initiated the return process for you. You should receive an email with a shipping label and full instructions within the next 5 minutes. Just repackage the shoes securely in any box you have.
+
+Is there anything else I can help you with today?`;
+                    resolve(response);
+                }, 1500); // 1.5 second delay to simulate network
+            });
+        }
+
+        /**
+         * Simulates a 1.5 second API call for the QA Analysis demo
+         * @param {string} ticketText - The text from the textarea
+         * @returns {Promise<string>} A hard-coded, structured JSON response
+         */
+        function mockQaAnalysisApi(ticketText) {
+             return new Promise(resolve => {
+                setTimeout(() => {
+                    const analysis = {
+                        "sentiment": "Negative",
+                        "is_resolved": false,
+                        "key_problem": "False Resolution",
+                        "coaching_tip": "The agent did not address the customer's core issue (tracking not updated) and closed the chat on an expression of resignation ('I guess I'll wait'), not resolution."
+                    };
+                    // Return the JSON string, formatted with 2 spaces for nice display
+                    resolve(JSON.stringify(analysis, null, 2));
+                }, 1500); // 1.5 second delay
+            });
+        }
+
+        // --- END: SIMULATED API FUNCTIONS ---
+        
+        /**
+         * Helper to show loader
+         * @param {string} loaderId - ID of the loader element
+         * @param {string} btnTextId - ID of the button text span
+         */
+        function showLoader(loaderId, btnTextId) {
+            const loader = document.getElementById(loaderId);
+            const btnText = document.getElementById(btnTextId);
+            if (loader) loader.style.display = 'inline-block';
+            if (btnText) btnText.style.display = 'none';
+        }
+
+        /**
+         * Helper to hide loader
+         * @param {string} loaderId - ID of the loader element
+         * @param {string} btnTextId - ID of the button text span
+         */
+        function hideLoader(loaderId, btnTextId) {
+            const loader = document.getElementById(loaderId);
+            const btnText = document.getElementById(btnTextId);
+            if (loader) loader.style.display = 'none';
+            if (btnText) btnText.style.display = 'inline-block';
+        }
+
+        // --- Main Presentation Logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length; // This will now be 12
+
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideCounter = document.getElementById('slide-counter');
+
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalText = document.getElementById('modal-text');
+            const closeModalBtn = document.getElementById('close-modal');
+
+            function showSlide(index) {
+                // Hide current slide
+                if (slides[currentSlide]) {
+                    slides[currentSlide].classList.remove('active');
+                }
+                
+                // Update current slide index
+                currentSlide = index;
+                
+                // Show new slide
+                if (slides[currentSlide]) {
+                    slides[currentSlide].classList.add('active');
+                }
+                
+                // Update counter
+                if (slideCounter) {
+                    slideCounter.textContent = `Slide ${currentSlide + 1} / ${totalSlides}`;
+                }
+                
+                // Update button states
+                if (prevBtn) {
+                    prevBtn.disabled = currentSlide === 0;
+                }
+                if (nextBtn) {
+                    nextBtn.disabled = currentSlide === totalSlides - 1;
+                }
+
+                // Update data-slide attribute on active slide (for consistency, though not strictly needed by this script)
+                slides.forEach((slide, i) => {
+                    slide.setAttribute('data-slide', i + 1);
+                });
+            }
+
+            // --- Navigation Event Listeners ---
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    if (currentSlide > 0) {
+                        showSlide(currentSlide - 1);
+                    }
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    if (currentSlide < totalSlides - 1) {
+                        showSlide(currentSlide + 1);
+                    }
+                });
+            }
+
+            // --- Modal Event Listeners ---
+            const modalTriggers = document.querySelectorAll('[data-modal-title]');
+            
+            modalTriggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const title = trigger.getAttribute('data-modal-title');
+                    const text = trigger.getAttribute('data-modal-text');
+                    
+                    if (modalTitle) {
+                        modalTitle.textContent = title;
+                    }
+                    if (modalText) {
+                        modalText.textContent = text;
+                    }
+                    if (modal) {
+                        modal.classList.add('active');
+                    }
+                });
+            });
+
+            function closeModal() {
+                if (modal) {
+                    modal.classList.remove('active');
+                }
+            }
+
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', closeModal);
+            }
+            
+            if (modal) {
+                // Close modal if clicking outside the content
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        closeModal();
+                    }
+                });
+            }
+            
+            // --- Keyboard Navigation ---
+            document.addEventListener('keydown', (e) => {
+                if (modal && modal.classList.contains('active')) {
+                     if (e.key === 'Escape') {
+                        closeModal();
+                    }
+                    return;
+                }
+
+                if (e.key === 'ArrowRight') {
+                    if(nextBtn) nextBtn.click();
+                } else if (e.key === 'ArrowLeft') {
+                    if(prevBtn) prevBtn.click();
+                }
+            });
+
+            // --- Initialize ---
+            if (slides.length > 0) {
+                showSlide(0);
+            }
+            
+            // --- NEW: AI Demo Button Listeners (now use mock functions) ---
+
+            // Slide 5: Agent Assist Demo
+            const demoBtnSlide5 = document.getElementById('demoBtnSlide5');
+            if (demoBtnSlide5) {
+                demoBtnSlide5.addEventListener('click', async () => {
+                    const prompt = document.getElementById('prompt-slide5').value;
+                    const resultEl = document.getElementById('result-slide5');
+
+                    showLoader('loader-slide5', 'btn-text-slide5');
+                    demoBtnSlide5.disabled = true;
+                    resultEl.style.display = 'block';
+                    resultEl.textContent = 'Generating response...';
+
+                    // Use the mock function
+                    const response = await mockAgentAssistApi(prompt);
+                    
+                    resultEl.textContent = response;
+                    hideLoader('loader-slide5', 'btn-text-slide5');
+                    demoBtnSlide5.disabled = false;
+                });
+            }
+
+            // Slide 8: QA Analysis Demo
+            const demoBtnSlide8 = document.getElementById('demoBtnSlide8');
+            if (demoBtnSlide8) {
+                demoBtnSlide8.addEventListener('click', async () => {
+                    const prompt = document.getElementById('prompt-slide8').value;
+                    const resultEl = document.getElementById('result-slide8');
+                    
+                    showLoader('loader-slide8', 'btn-text-slide8');
+                    demoBtnSlide8.disabled = true;
+                    resultEl.style.display = 'block';
+                    resultEl.textContent = 'Analyzing ticket...';
+
+                    // Use the mock function
+                    const response = await mockQaAnalysisApi(prompt);
+                    
+                    resultEl.textContent = response;
+                    
+                    hideLoader('loader-slide8', 'btn-text-slide8');
+                    demoBtnSlide8.disabled = false;
+                });
+            }
+
+        });
+    </script>
+</body>
+</html>
+
